@@ -1,0 +1,11 @@
+<div class="filter-container">
+    <span>Filter: </span>
+    <input type="radio" name="fitler" value="total" [(ngModel)]="selectedRadioButtonValue" (change)="onRadioButtonSelectionChanged()"/>
+    <span>{{"All Courses("+total+")"}}</span>
+
+    <input type="radio" name="fitler" value="Free" [(ngModel)]="selectedRadioButtonValue" (change)="onRadioButtonSelectionChanged()"/>
+    <span>{{"Free Courses("+free+")"}}</span>
+
+    <input type="radio" name="fitler" value="Premium" [(ngModel)]="selectedRadioButtonValue" (change)="onRadioButtonSelectionChanged()"/>
+    <span>{{"Premium Courses("+premium+")"}}</span>
+</div>
